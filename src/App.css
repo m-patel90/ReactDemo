@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar .navbar-menu-wrapper {
+  background: #fff;
+  transition: width 0.25s ease;
+  -webkit-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -ms-transition: width 0.25s ease;
+  color: #001737;
+  padding-left: 1.812rem;
+  padding-right: 1.812rem;
+  width: calc(100% - 236px - 0.5rem);
+  height: 8.625rem !important;
+}
+
+.navbar .navbar-brand-wrapper {
+  background: #4392CF;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+  width: calc(236px + 0.5rem);
+  height: 5.625rem;
+  /* top: -19px; */
+  margin-top: -60px !important;
+}
+
+.navbar .navbar-brand-wrapper .navbar-brand-inner-wrapper .navbar-brand img {
+  width: calc(236px - 110px);
+  max-width: 100%;
+  height: 60px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile img {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 89px;
+}
+
+.searchbar {
+  margin-right: 23px !important;
+  width: 686px !important;
+  height: 49px !important;
+  border-radius: 87px !important;
+}
+
+.smarttextbox {
+  margin-right: 23px !important;
+  height: 49px !important;
+  border-radius: 87px !important;
+}
+
+.sidebar {
+  min-height: calc(100vh - 4.625rem);
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  padding: 0;
+  width: 246px;
+  z-index: 11;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+  box-shadow: 0 5px 10px 0 rgb(230 230 243 / 88%);
+  -webkit-box-shadow: 0 5px 10px 0 rgb(230 230 243 / 88%);
+  -moz-box-shadow: 0 5px 10px 0 rgba(230, 230, 243, 0.88);
+  -ms-box-shadow: 0 5px 10px 0 rgba(230, 230, 243, 0.88);
+  margin-left: 0.5rem;
+  margin-bottom: 2.062rem;
+  border-radius: 6px;
+  border: 1px solid #e4e4f4;
+  margin-right: -34px;
+  margin-top: -10px;
+  margin-left: -1px;
+
+  @media (min-width: 992px) .sidebar-icon-only .sidebar {
+    width: 80px !important;
+  }
+}
+.sidebar-dark .sidebar {
+  background: #282f3a !important;
+}
+
+.stretch-card > .card {
+  width: 100%;
+  min-width: 103.5% !important;
+  margin-top: 58px;
+}
+
+.ant-tabs-tabpane {
+  flex: none;
+  width: 0.5% !important;
+  outline: none;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* .box:hover {
+  border-color: purple;
+} */
+
+.box:hover {
+  border: 1px solid #4194d3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  max-width: 570px;
+}
+
+.ant-notification
+{
+ top: 160px !important;
+}
